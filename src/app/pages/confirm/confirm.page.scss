@@ -1,0 +1,40 @@
+.confirmation {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .outer-circle {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .inner-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+ion-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .main-button:after {
+        box-shadow: none !important;
+    }
+}
+

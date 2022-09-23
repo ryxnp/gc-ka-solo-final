@@ -1,0 +1,15 @@
+.splash-animation {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .splash-img {
+        img {
+            max-width: 180px;
+        }
+        
+        -webkit-animation:rotate-scale-up-diag-1 1.5s linear both;animation:rotate-scale-up-diag-1 1.5s linear both
+    }
+    @-webkit-keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}@keyframes rotate-scale-up-diag-1{0%{-webkit-transform:scale(1) rotate3d(1,1,0,0deg);transform:scale(1) rotate3d(1,1,0,0deg)}50%{-webkit-transform:scale(2) rotate3d(1,1,0,-180deg);transform:scale(2) rotate3d(1,1,0,-180deg)}100%{-webkit-transform:scale(1) rotate3d(1,1,0,-360deg);transform:scale(1) rotate3d(1,1,0,-360deg)}}
+}

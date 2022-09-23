@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Contact Us</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<br>
+  <form>
+    <div class="form-content">
+      <ion-label>Name</ion-label>
+      <div class="form-fields">
+        <ion-input type="text" placeholder="First Name"></ion-input>
+      </div>
+    </div>
+  </form>
+  <form>
+    <div class="form-content">
+      <ion-label>Email</ion-label>
+      <ion-input type="email" placeholder="Email Address"></ion-input>
+    </div>
+  </form>
+  <form>
+    <div class="form-content">
+      <ion-label>Your Message</ion-label>
+      <ion-textarea class="textarea" placeholder="Enter your message here..." auto-grow="true" rows="16" cols="20"></ion-textarea>
+    </div>
+  </form>
+  <ion-button color="tertiary" expand="block" size="large">Send Message</ion-button>
+
+</ion-content>

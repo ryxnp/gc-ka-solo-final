@@ -1,0 +1,84 @@
+ion-content {
+    --background: #289be7;
+    position: relative;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0.5rem;
+
+        ion-button {
+            width: 60px;
+            height: 60px;
+
+            ion-icon {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .card {
+        height: 80%;
+        width: 100%;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        border-radius: 3rem 3rem 0 0;
+        padding: 2rem;
+
+        .image {
+            position: absolute;
+            top: -8.5rem;
+            width: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .card-name {
+            margin-top: 35%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+
+            h1 {
+                font-weight: 700;
+                font-size: 15px;
+                color: black;
+            }
+            
+            p {
+                font-size: 15px;
+                font-weight: 700;
+                color: #289be7;
+
+                sup {
+                    font-size: 10px;
+                    margin-right: -0.1rem;
+                }
+            }
+        }
+
+        .rates {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 600;
+            color: black;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: gray;
+            opacity: 0.7;
+        }
+    }
+}

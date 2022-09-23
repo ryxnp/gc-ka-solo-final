@@ -1,0 +1,15 @@
+.badge {
+    margin-right: 10px;
+    background: #289be7;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+
+    ion-icon {
+        margin-right: 2px;
+        font-size: 15px;
+    }
+}

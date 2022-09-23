@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Products</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="header">
+    <h1>Menu</h1>
+    <div class="avatar">
+      <ion-img src="assets\icon\logo.png"></ion-img>
+    </div>
+  </div>
+
+  <app-searchbar></app-searchbar>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row class="ion-text-center">
+
+          <ion-col size="3" routerLink="/listing">
+          <ion-img src="assets/icon/all.png"></ion-img>
+          <p>All</p>
+         </ion-col>
+        
+       <ion-col size="3" routerLink="/whiskey">
+       <ion-img src="assets/icon/hoodie.png"></ion-img>
+       <p>Hoodie</p>
+      </ion-col>
+
+      <ion-col class="active" size="3" routerLink="/rum">
+        <ion-img src="assets/icon/pants.png"></ion-img>
+        <p>Men</p>
+      </ion-col>
+
+      <ion-col size="3" routerLink="/vodka">
+        <ion-img src="assets/icon/pants2.png"></ion-img>
+        <p>VWomen</p>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <h1 class="list-header">Pants for Men</h1>
+  <div class="rum-list" >
+    <app-rum-card *ngFor="let rum of rums" [item]="rum" (clicked)="goToDetailPage(rum.id)"></app-rum-card>
+
+  </div>
+</ion-content>
+

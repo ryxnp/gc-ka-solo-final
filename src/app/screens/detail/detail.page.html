@@ -1,0 +1,39 @@
+
+<ion-content>
+<div class="header">
+  <ion-buttons>
+    <ion-button routerLink="/listing">
+    <ion-icon slot="icon-only" color="light" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+  </ion-buttons>
+  <ion-buttons>
+    <ion-button>
+      <ion-icon slot="icon-only" color="light" name="heart-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</div>
+
+<div class="card">
+  <div class="image">
+    <ion-img [src]="drink.image"></ion-img>
+  </div>
+
+  <div class="card-content">
+    <div class="card-name">
+      <h1 class="ion-no-margin">{{ drink.name }}</h1>
+      <p class="ion-no-margin">Php {{ drink.price | number: '1.2'}}</p>
+    </div>
+  </div>
+
+  <div class="rates">
+    <app-badge icon="star-outline" text="4.9"></app-badge>
+  </div>
+  
+  <div class="about">
+    <h1>About</h1>
+    <p>{{drink.description}}</p>
+  </div>
+
+  <app-button (click)="addItemToCart()">Add to Cart</app-button>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "liquor authority",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

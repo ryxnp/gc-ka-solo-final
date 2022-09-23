@@ -1,0 +1,56 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="./assets/icon/logo.png">
+        <ion-label>
+          <h2>GC KA SOLO</h2>
+          <p>ask@gckasolo.ph</p>
+        </ion-label>
+      </div>
+      
+      <ion-list class="menu-items" lines="none">
+        <ion-item>
+          <ion-menu-toggle routerLink="/home">
+            <ion-icon name="home-outline"></ion-icon>Home          
+          </ion-menu-toggle>
+        </ion-item>
+
+        <ion-item routerLink="/listing">
+          <ion-menu-toggle>
+            <ion-icon name="wine-outline"></ion-icon>Our Products               
+          </ion-menu-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-menu-toggle routerLink="/cart">
+            <ion-icon name="cart-outline"></ion-icon>Cart         
+          </ion-menu-toggle>
+        </ion-item>
+
+       <ion-item>
+          <ion-menu-toggle routerLink="/about-the-app">
+            <ion-icon name="information-outline"></ion-icon>About the app                
+          </ion-menu-toggle>
+        </ion-item>
+
+        <ion-item routerLink="/developers">
+          <ion-menu-toggle>
+            <ion-icon name="people-outline"></ion-icon>Developers                  
+          </ion-menu-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-menu-toggle routerLink="/contactus">
+            <ion-icon name="chatbubbles-outline"></ion-icon>Contact Us!         
+          </ion-menu-toggle>
+        </ion-item>
+        
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

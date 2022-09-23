@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Cart</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h3 class="title" *ngIf="(cartItems$|async).length">{{ (cartItems$|async).length }} item in cart</h3>
+
+
+<ion-list lines="none">
+  <ion-item-sliding *ngFor="let item of cartItems$|async">
+    <ion-item>
+      <app-cart-item [item]="item" (increase)="onIncrease(item)" (decrease)="onDecrease(item)"></app-cart-item>
+    </ion-item>
+    <ion-item-options>
+      <ion-item-option (click)="removeFromCart(item)">
+        <ion-icon name="trash-outline" size="large" color="danger"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<div class="empty-cart" *ngIf="!(cartItems$|async).length">
+  <ion-icon name="cart-outline"></ion-icon>
+  <p>Your Cart is empty</p>
+  
+</div>
+
+
+<app-button *ngIf="(cartItems$|async).length">
+  Total: <span>Php {{ totalAmount$|async|number: '1.2' }}</span>
+</app-button>
+<br>
+<app-button *ngIf="(cartItems$|async).length" routerLink="/checkout">
+  Checkout
+</app-button>
+</ion-content>

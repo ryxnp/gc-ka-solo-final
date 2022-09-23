@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "liquor authority",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
